@@ -1,5 +1,9 @@
-syntax = "proto3";
+syntax="proto3";
 
-service API {
-	rpc GetList() returns (stream string) {}
+message Block {
+	 string block = 1;
+}
+
+service Execute {
+	rpc exec(Block) returns (Block){ }
 }

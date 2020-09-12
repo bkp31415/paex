@@ -1,2 +1,2 @@
 #init code
-print("Hello World!")
+import app

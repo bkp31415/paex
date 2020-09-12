@@ -1,19 +1,9 @@
-apiVersion: paex/0.1
+apiVersion: v0.1
 kind: Service
 metadata:
-  name: service
+  name: 
 spec:
-  selector:
-    matchLabels:
-      app: paex
-  replicas: 1
-  template:
-    metadata:
-      labels:
-        app: paex
-    spec:
-      containers:
-      - name: paex
-        image: paex:0.1
-        ports:
-        - containerPort: 80
+  ports:
+    - name: grpc
+      protocol: TCP
+      containerPort: 9090

@@ -1,5 +1,5 @@
 
-apiVersion: paex/0.1
+apiVersion: v0.1
 kind: Deployment
 metadata:
   name: deployment

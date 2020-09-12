@@ -1,10 +1,10 @@
 FROM python:3.8-slim
 
-WORKDIR /app
+WORKDIR /paex
 
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY ./app .
+COPY ./paex .
 
 CMD [ "python", "./main.py" ]

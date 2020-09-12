@@ -1,0 +1,19 @@
+apiVersion: paex/0.1
+kind: Service
+metadata:
+  name: service
+spec:
+  selector:
+    matchLabels:
+      app: paex
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: paex
+    spec:
+      containers:
+      - name: paex
+        image: paex:0.1
+        ports:
+        - containerPort: 80
